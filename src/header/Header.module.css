@@ -1,4 +1,9 @@
 .header {
     background-color: rgba(186, 243, 223, 0.85);
     height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /*flex-wrap: wrap;*/
 }
