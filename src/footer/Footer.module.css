@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgba(103, 239, 58, 0.85);
+    border: 1px #a9cbb8 solid;
+    height: 15vh;
+    margin-top: auto;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: flex-end;*/
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+}

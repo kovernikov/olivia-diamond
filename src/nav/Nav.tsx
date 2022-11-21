@@ -5,8 +5,9 @@ function Nav() {
 	return (
 		<div className={style.nav}>
 			<a href="">O nás</a>
-			<a href="">Zlato</a>
-			<a href="">Kontakt</a>
+			<a href="">Galleria</a>
+			<a href="">E-shop</a>
+			<a href="">Kontakty</a>
 		</div>
 	);
 }

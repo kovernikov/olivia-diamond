@@ -1,7 +1,9 @@
-.nav{
-    width: 300px;
+.nav {
+    /*width: 300px;*/
     background-color: chartreuse;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 20vw;
+    margin-right: 5vw;
 }
