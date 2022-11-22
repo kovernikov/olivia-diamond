@@ -1,12 +1,14 @@
 .header {
-    background-color: rgba(186, 243, 223, 0.85);
-    height: 20vh;
+    /*position: fixed;*/
+    background-color: rgba(103, 239, 58, 0.85);
+    height: 10vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 0 30px 40px rgb(0 0 0 / 20%);
-    transform-origin: top right;
-    transform: skewY(1deg);
+    /*transform-origin: top right;*/
+    /*transform: skewY(1deg);*/
 }
