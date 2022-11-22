@@ -8,12 +8,17 @@ import Eshop from './eshop/Eshop';
 import Footer from './footer/Footer';
 
 function App() {
+	const styles = {
+		flex: 1
+	}
 	return (
 		<div className={style.App}>
 			<Header/>
-			<Gallery/>
-			<Eshop/>
-			<Contact/>
+			<div style={styles}>
+				<Gallery/>
+				<Eshop/>
+				<Contact/>
+			</div>
 			<Footer/>
 		</div>
 	);

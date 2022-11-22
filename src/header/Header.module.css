@@ -1,5 +1,5 @@
 .header {
-    /*position: fixed;*/
+    position: fixed;
     background-color: rgba(103, 239, 58, 0.85);
     height: 10vh;
     width: 100%;
