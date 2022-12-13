@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import style from './App.module.css';
 import Header from './header/Header';
 import Gallery from './galleria/Gallery';
 import Contact from './kontakt/Contact';
 import Eshop from './eshop/Eshop';
 import Footer from './footer/Footer';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
 	const styles = {
 		flex: 1
 	}
 	return (
-		<div className={style.App}>
+
+		<BrowserRouter>
 			<Header/>
-			<div style={styles}>
-				<Gallery/>
-				<Eshop/>
-				<Contact/>
-			</div>
+			<Routes >
+				<Route path="oNas/*" element={<Header/>} />
+				<Route path="gallery/*" element={<Gallery/>} />
+				<Route path="eshop/*" element={<Eshop/>} />
+				<Route path="contact/*" element={<Contact/>} />
+			</Routes>
 			<Footer/>
-		</div>
+			{/*<div className={style.App}>*/}
+
+			{/*	<div style={styles}>*/}
+
+			{/*	</div>*/}
+
+			{/*</div>*/}
+		</BrowserRouter>
+
+
 	);
 }
 
