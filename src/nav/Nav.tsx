@@ -1,17 +1,40 @@
 import React from 'react';
 import style from './Nav.module.css';
-import {NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
-function Nav() {
+
+
+export type NavTypeProps = {
+	// appState: StateType
+	// activeClassName?: string | undefined;
+}
+
+const Nav: React.FC<NavTypeProps > = (props) => {
 	return (
 		<div className={style.nav}>
-			<NavLink to="/oNas" > O nás </NavLink>
+			<div className={style.item}>
+				<NavLink to="/o-nas"    className={({ isActive }) =>
+					isActive ? style.activelink : undefined
+				}> O nás </NavLink>
+			</div>
 			{/*<a href="">O nás</a>*/}
-			<NavLink to="/galleria" > Galleria </NavLink>
-			<NavLink to="/e-shop" > E-shop </NavLink>
+			<div className={style.item}>
+				<NavLink to="/galleria" className={({ isActive }) =>
+					isActive ? style.activelink : undefined
+				}> Galleria </NavLink>
+			</div>
+			<div className={style.item}>
+				<NavLink to="/e-shop" className={({ isActive }) =>
+					isActive ? style.activelink : undefined
+				}> E-shop </NavLink>
+			</div>
 			{/*<a href="">E-shop</a>*/}
 			{/*<a href="">Kontakty</a>*/}
-			<NavLink to="/contact" > Kontakty </NavLink>
+			<div className={style.item}>
+				<NavLink to="/contact" className={({ isActive }) =>
+					isActive ? style.activelink : undefined
+				}> Kontakty </NavLink>
+			</div>
 		</div>
 	);
 }

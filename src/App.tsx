@@ -13,12 +13,12 @@ function App() {
 	}
 	return (
 
-		<BrowserRouter>
+		<BrowserRouter >
 			<Header/>
 			<Routes >
-				<Route path="oNas/*" element={<Header/>} />
+				<Route path="o-nas/*" element={<Header/>} />
 				<Route path="gallery/*" element={<Gallery/>} />
-				<Route path="eshop/*" element={<Eshop/>} />
+				<Route path="e-shop/*" element={<Eshop/>} />
 				<Route path="contact/*" element={<Contact/>} />
 			</Routes>
 			<Footer/>

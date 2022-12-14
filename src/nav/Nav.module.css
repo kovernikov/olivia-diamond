@@ -7,3 +7,13 @@
     width: 20vw;
     margin-right: 5vw;
 }
+.item a {
+    display: block;
+    color: crimson;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.item a.activelink {
+    color: blue;
+}
