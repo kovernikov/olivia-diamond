@@ -6,6 +6,7 @@ import Contact from './kontakt/Contact';
 import Eshop from './eshop/Eshop';
 import Footer from './footer/Footer';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import About from './about/About';
 
 function App() {
 	const styles = {
@@ -16,7 +17,7 @@ function App() {
 		<BrowserRouter >
 			<Header/>
 			<Routes >
-				<Route path="o-nas/*" element={<Header/>} />
+				<Route path="about/*" element={<About/>} />
 				<Route path="gallery/*" element={<Gallery/>} />
 				<Route path="e-shop/*" element={<Eshop/>} />
 				<Route path="contact/*" element={<Contact/>} />

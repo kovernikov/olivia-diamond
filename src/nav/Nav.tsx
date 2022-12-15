@@ -13,13 +13,13 @@ const Nav: React.FC<NavTypeProps > = (props) => {
 	return (
 		<div className={style.nav}>
 			<div className={style.item}>
-				<NavLink to="/o-nas"    className={({ isActive }) =>
+				<NavLink to="/about"    className={({ isActive }) =>
 					isActive ? style.activelink : undefined
-				}> O nás </NavLink>
+				}> About </NavLink>
 			</div>
 			{/*<a href="">O nás</a>*/}
 			<div className={style.item}>
-				<NavLink to="/galleria" className={({ isActive }) =>
+				<NavLink to="/gallery" className={({ isActive }) =>
 					isActive ? style.activelink : undefined
 				}> Galleria </NavLink>
 			</div>
