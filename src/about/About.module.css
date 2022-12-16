@@ -3,8 +3,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     width: 100vw;
     height: 100vh;
 
@@ -70,7 +70,7 @@
     /*    0 0 0 #cccccc inset,*/
     /*    0 0 0 #ffffff inset;*/
     /*}*/
-    100% {
+    90% {
         width: 100vw;
         height: 70vh;
         font-size: 13vw;
@@ -79,5 +79,15 @@
         0 0 0 #ffffff,
         0 0 0 #cccccc inset,
         2px 2px 2px #ffffff inset;
+    }
+    100% {
+        width: 15vw;
+        height: 3vw;
+        font-size: 1vw;
+        background: #f0f0f0;
+        box-shadow: 0 0 0 #cccccc,
+        0 0 0 #ffffff,
+        10px 10px 10px #cccccc inset,
+        -10px -10px 10px #ffffff inset;
     }
 }
