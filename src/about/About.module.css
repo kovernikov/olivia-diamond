@@ -3,8 +3,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
 
@@ -26,9 +26,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 0vw;
-    height: 0vw;
-    font-size: 0vw;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1vw;
     background: #f0f0f0;
     box-shadow: 0 0 0 #cccccc,
     0 0 0 #ffffff,
@@ -36,20 +36,29 @@
     -10px -10px 10px #ffffff inset;
     animation: anime 5s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 @keyframes anime {
+    /*0% {*/
+    /*    width: 0vw;*/
+    /*    height: 0vw;*/
+    /*    font-size: 0vw;*/
+    /*    background: #f0f0f0;*/
+    /*    box-shadow: 0 0 0 #cccccc,*/
+    /*    0 0 0 #ffffff,*/
+    /*    10px 10px 10px #cccccc inset,*/
+    /*    -10px -10px 10px #ffffff inset;*/
+    /*}*/
     0% {
-        width: 0vw;
-        height: 0vw;
-        font-size: 0vw;
+        width: 15vw;
+        height: 3vw;
+        font-size: 1vw;
         background: #f0f0f0;
         box-shadow: 0 0 0 #cccccc,
         0 0 0 #ffffff,
         10px 10px 10px #cccccc inset,
         -10px -10px 10px #ffffff inset;
     }
-
     /*25% {*/
     /*    width: 50vw;*/
     /*    height: 50vh;*/
@@ -70,7 +79,7 @@
     /*    0 0 0 #cccccc inset,*/
     /*    0 0 0 #ffffff inset;*/
     /*}*/
-    90% {
+    100% {
         width: 100vw;
         height: 70vh;
         font-size: 13vw;
@@ -80,14 +89,5 @@
         0 0 0 #cccccc inset,
         2px 2px 2px #ffffff inset;
     }
-    100% {
-        width: 15vw;
-        height: 3vw;
-        font-size: 1vw;
-        background: #f0f0f0;
-        box-shadow: 0 0 0 #cccccc,
-        0 0 0 #ffffff,
-        10px 10px 10px #cccccc inset,
-        -10px -10px 10px #ffffff inset;
-    }
+
 }
