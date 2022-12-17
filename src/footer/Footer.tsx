@@ -5,6 +5,8 @@ function Footer() {
 	return (
 		<div className={style.footer}>
 
+
+
 		</div>
 	);
 }

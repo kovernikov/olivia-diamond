@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Eshop.module.css';
+import style from './Eshop.module.scss';
 
 
 function Eshop() {
